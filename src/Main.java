@@ -1,6 +1,9 @@
 import dao.ManagerDao;
 import dao.impl.ManagerDaoImpl;
+import impl.StudentDao;
+import impl.StudentDaoImpl;
 import model.Manager;
+import model.Student;
 
 import java.util.Arrays;
 
@@ -25,17 +28,17 @@ public class Main {
 
         */
 
-        ManagerDao managerDao = new ManagerDaoImpl();
-        Manager manager = new Manager();
-        manager.setId(2);
-        manager.setName("Aibek");
-        manager.setSurname("Bekov");
-        manager.setEmail("bek@gmail.com");
-        manager.setPhone("9665556666");
-        manager.setSalary(25000.0);
+        StudentDao studentDao = new StudentDaoImpl();
+        Student student = new Student();
+        student.setId(2);
+        student.setName("Sher");
+        student.setSurname("Avazov");
+        student.setEmail("avazovS@gmail.com");
+        student.setPhone("966555666611");
 
- //       managerDao.save(manager);
-        Manager[] managers = managerDao.findAll();
-        System.out.println(Arrays.toString(managers));
+
+   //     studentDao.save(student);
+      Student[] students = studentDao.findAll();
+       System.out.println(Arrays.toString(students));
     }
 }

@@ -55,7 +55,7 @@ public class ManagerDaoImpl implements ManagerDao {
 
 //                System.out.println(scanner.next());
 
-                manager.setId(Long.parseLong(scanner.next()));
+                manager.setId(scanner.nextLong());
                 manager.setName(scanner.next());
                 manager.setSurname(scanner.next());
                 manager.setEmail(scanner.next());

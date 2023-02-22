@@ -40,11 +40,10 @@ public abstract class User extends BaseEntity{
 
     @Override
     public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", phone='" + phone + '\'' +
-                ", gmail='" + email + '\'' +
-                '}';
+        return  "\n" + "Имя: " + name + "\n" +
+                "Фамилия: " + surname + "\n" +
+                "Телефон: " + phone + "\n" +
+                "емайл: " + email  + "\n" +
+                "Дата создания: " + getDateCreated();
     }
 }
